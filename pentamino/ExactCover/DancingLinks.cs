@@ -6,7 +6,7 @@ namespace ExactCover
 	// The sparse array organized as double linked circular list of nodes and dancing links algorythm
 	public class DancingLinks
 	{
-		public ArrayList columnHeaders; // of type column header
+		public ArrayList columnHeaders = new ArrayList(); // of type column header
 		public ColumnHeader rootHeader;
 		
 		public ArrayList Solution {
@@ -126,7 +126,7 @@ namespace ExactCover
 					col.up.down = col;
 		        }
 		    }
-			//Reconnect the heather
+			//Reconnect the header
 		    colHeader.right.left = colHeader;
 		    colHeader.left.right = colHeader;
 		}		

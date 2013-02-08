@@ -40,6 +40,8 @@
     <Compile Include="ExactCover\Node.cs" />
     <Compile Include="ExactCover\ColumnHeader.cs" />
     <Compile Include="ExactCover\DancingLinks.cs" />
+    <Compile Include="FigureSet.cs" />
+    <Compile Include="Solver.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -7,7 +7,7 @@ namespace ExactCover
 	{
 		public int count; // count of nodes in a column
 
-		void Add(Node node)
+		public void Add(Node node)
 		{
 	        node.header = this;
 			

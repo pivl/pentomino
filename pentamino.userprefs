@@ -1,0 +1,20 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="pentamino/Solver.cs">
+    <Files>
+      <File FileName="pentamino/Main.cs" Line="11" Column="1" />
+      <File FileName="pentamino/ExactCover/Node.cs" Line="24" Column="1" />
+      <File FileName="pentamino/ExactCover/ColumnHeader.cs" Line="19" Column="24" />
+      <File FileName="pentamino/ExactCover/DancingLinks.cs" Line="46" Column="5" />
+      <File FileName="pentamino/FigureSet.cs" Line="197" Column="25" />
+      <File FileName="pentamino/Solver.cs" Line="163" Column="7" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore>
+      <Breakpoint file="/Users/pavel/Developer/mobirate/pentamino/pentamino/Main.cs" line="11" />
+      <Breakpoint file="/Users/pavel/Developer/mobirate/pentamino/pentamino/Solver.cs" line="93" />
+    </BreakpointStore>
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>
