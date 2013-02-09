@@ -42,6 +42,7 @@
     <Compile Include="ExactCover\DancingLinks.cs" />
     <Compile Include="FigureSet.cs" />
     <Compile Include="Solver.cs" />
+    <Compile Include="Input.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>

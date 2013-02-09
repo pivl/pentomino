@@ -33,6 +33,9 @@ namespace pentamino
 		
 		FigureSet figureSet = new FigureSet();
 		
+		// total number of rows in a dancing links matrix
+		int nLines;
+		
 		public char[,] Solution {
 			get;
 			protected set;
@@ -44,7 +47,18 @@ namespace pentamino
 			FillMatrix();
 		}
 		
+		public Solver(int[,] sourceData) {
+			fieldSource = sourceData;
+			
+			InitMatrix();
+			FillMatrix();
+		}
+		
 		public bool Solve() {
+			// matrix doesn't have any rows
+			if (nLines == 0)
+				return false;
+			
 			bool result = dancingLinks.Solve();
 			if (result) {
 				// transforming the result to the form of array of chars that can be easily output to screen
@@ -126,9 +140,7 @@ namespace pentamino
 		}
 		
 		// filling in matrix with rows of every possible position of figure
-		void FillMatrix() {
-			int nLines = 0;
-			
+		void FillMatrix() {			
 			for (int figVariantId = 0; figVariantId < figureSet.Count; figVariantId++) {
 				long[] figure = figureSet.GetFigureByIndex(figVariantId);
 				int figureId = figureSet.GetFigureIdByIndex(figVariantId);

@@ -20,7 +20,34 @@ namespace pentamino
 		public static void Main (string[] args)
 		{
 			Console.WriteLine ("Pentamino Solver using Dancing Links");
-			Solver solver = new Solver();
+			if (args.Length == 0) {
+				Console.WriteLine("Enter an input file name as an argument");
+				return;
+			}
+			
+			string filename = args[0];
+			Input input;
+			
+			try {
+				// opening file to read
+				using (var file = new System.IO.StreamReader(filename)) {
+					// reading in from the file
+					input = new Input(file);
+				}
+			}
+			catch (System.IO.IOException exception) { // file not found exception
+				Console.WriteLine(exception.Message);
+				return;
+			}
+			
+			if (input.IsValid() == false) {
+				Console.WriteLine("Input is invalid");
+				Console.WriteLine(input.GetReason());
+				return;
+			}
+			
+			// getting the source array from the input and feeding it to our solver
+			Solver solver = new Solver(input.Data);
 			bool result = solver.Solve();
 			if (result) {
 				Console.WriteLine("The solution has been found");
@@ -30,5 +57,7 @@ namespace pentamino
 				Console.WriteLine("No solutions found");
 			}
 		}
-	}
-}
+		
+	} // end of class
+
+} // end of namespace
