@@ -134,6 +134,8 @@ namespace pentamino
 			for (int i = 0; i < figureSet.FigureCount; i++) {
 				var newNode = new NodeFigure() { figureId = i };
 				header.nodedata = newNode;
+				// all figure headers are optional
+				((ExactCover.ColumnHeader) header).optional = true;
 				header = header.right;
 				figureNodes[i] = newNode;
 			}

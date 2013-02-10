@@ -46,6 +46,13 @@ namespace ExactCover
 			{
 				return true;
 			}
+			// if aray contains only optional columns (constraints) then the solution is found
+			bool containsOptionalOnly = true;
+			for (var h = rootHeader.right; h != rootHeader; h = h.right) {
+				if (((ColumnHeader)h).optional == false)
+					containsOptionalOnly = false;
+			}
+			if (containsOptionalOnly) return true;
 		
 			ColumnHeader header = GetShortestColumn();
 		
@@ -88,7 +95,8 @@ namespace ExactCover
 			
 			// cycling through all the headers starting from root and ending on root
 			for (ColumnHeader header = (ColumnHeader) rootHeader.right; header != rootHeader; header = (ColumnHeader) header.right) {
-				if (header.count < minCount) {
+				// we are picking the column here if it is not optional
+				if ((header.count < minCount)&&(header.optional == false)) {
 					minCount = header.count;
 					column = header;
 				}

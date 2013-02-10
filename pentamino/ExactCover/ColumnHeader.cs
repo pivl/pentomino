@@ -6,6 +6,8 @@ namespace ExactCover
 	public class ColumnHeader : Node
 	{
 		public int count; // count of nodes in a column
+		
+		public bool optional = false; // is this constraint required to be in the solution or it is optional
 
 		public void Add(Node node)
 		{

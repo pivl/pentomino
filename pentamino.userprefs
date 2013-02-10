@@ -1,11 +1,13 @@
-﻿<Properties>
+﻿<Properties GitUserInfo="UsingGIT">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="pentamino/Main.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="pentamino/ExactCover/DancingLinks.cs">
     <Files>
-      <File FileName="pentamino/Main.cs" Line="53" Column="26" />
-      <File FileName="pentamino/FigureSet.cs" Line="18" Column="21" />
-      <File FileName="pentamino/Solver.cs" Line="54" Column="17" />
-      <File FileName="pentamino/Input.cs" Line="33" Column="4" />
+      <File FileName="pentamino/Main.cs" Line="41" Column="5" />
+      <File FileName="pentamino/FigureSet.cs" Line="133" Column="5" />
+      <File FileName="pentamino/Solver.cs" Line="133" Column="32" />
+      <File FileName="pentamino/Input.cs" Line="8" Column="27" />
+      <File FileName="pentamino/ExactCover/DancingLinks.cs" Line="55" Column="42" />
+      <File FileName="pentamino/ExactCover/ColumnHeader.cs" Line="10" Column="23" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
@@ -18,6 +20,18 @@
         <CommandData>
           <Item Key="MonoDevelop.Ide.Execution.CustomArgsCustomizer">
             <Value Arguments="1.in" WorkingDirectory="/Users/pavel/Developer/mobirate/tests" ctype="CustomArgsExecutionModeData">
+              <EnvironmentVariables />
+            </Value>
+          </Item>
+          <Item Key="MonoDevelop.Ide.Execution.MonoExecutionCustomizer">
+            <Value ctype="MonoExecutionParameters" />
+          </Item>
+        </CommandData>
+      </Data>
+      <Data Name="With small.in" Id="ef80c7d9-bd8d-4bf2-bbcd-3a525d14576f" ModeId="Default">
+        <CommandData>
+          <Item Key="MonoDevelop.Ide.Execution.CustomArgsCustomizer">
+            <Value Arguments="small.in" WorkingDirectory="/Users/pavel/Developer/mobirate/tests" ctype="CustomArgsExecutionModeData">
               <EnvironmentVariables />
             </Value>
           </Item>
