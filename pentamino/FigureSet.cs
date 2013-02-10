@@ -6,7 +6,6 @@ namespace pentamino
 	/*
 	The class is part of pentamino solving algorythm.
 	It generates and provides all possible figure variations
-	It tells the Solver which figures were used on which are not
 	*/
 	public class FigureSet
 	{

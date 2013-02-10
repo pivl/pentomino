@@ -9,11 +9,13 @@ http://en.wikipedia.org/wiki/Pentomino
 
 The fastest way to find the solution is using the Algorythm X by Donald Knuth's.
 To understand how the pentomino puzzle of covering the rectangular area by pentominos is
-represented throuth Exact Cover, read
+represented through Exact Cover, read
 http://en.wikipedia.org/wiki/Exact_cover
 
 Some links to finding solutions to Exact cover:
+
 http://en.wikipedia.org/wiki/Algorithm_X
+
 http://en.wikipedia.org/wiki/Dancing_Links
 
 Some slides explaining Dancing Links implementation:
@@ -36,3 +38,7 @@ oooooooo
 ```
 Lowercase letter 'o' is the cell where figure can be placed.
 Space ' ' is the cell where figure cannot be placed.
+
+# Dancing Links
+
+Dancing Links implementation is modified to iclude optional constraints. All figure constaints are made optional, so for example only 5 figures of 12 available can be used to sovle the puzzle with field with less than 60 squares.
